@@ -5,13 +5,13 @@ Xristos Katsaros and Ram Avni
 
 
 
-#**Overview**
+# **Overview**
 
 The purpose of this project was to use a linear regression model in order to predict U.S. high school graduation rates. Obviously, there are many factors and vast data, and initially we wanted to focus on school performance across all states. However, different states have different mandatory exams and evaluation matrices, so we chose a data set with high school graduation rates, in order to measure and compare all states on a uniform scale. Initially ,our independent variables were types of funding (federal, local, etc.) and types of expenditure (instructional, administrative, etc.). Thus, we aimed at deriving a model that can show correlation between amount / type of funding and school performance, measured by graduation rates, for all 50 states.
 
 
 
-#**EDA and Feature Engineering**
+# **EDA and Feature Engineering**
 
 We used the following data sets:
 Kaggale - U.S. Education Datasets: Unification Project:
@@ -35,30 +35,30 @@ Exploring the cleaned data, it was unsurprising to find huge variance among the 
 The plots below show the percent of local and government funding per each state:
 (image url)
 
-#**Percent of Local Revenue per State:**
+# **Percent of Local Revenue per State:**
 (image url)
 
-#**Percent of Gov’t (State and Federal) Revenue per State:**
+# **Percent of Gov’t (State and Federal) Revenue per State:**
 (image url)
 
 The pairplots graphs below show the patterns of revenue percent for states with a population below 10m and above 10m:
 (image url)
 
-#**Percent Funding vs. Graduation Rates (States with population < 10m)**
+# **Percent Funding vs. Graduation Rates (States with population < 10m)**
 (image url)
 
-#**Percent Funding vs. Graduation Rates (States with population < 10m)**
+# **Percent Funding vs. Graduation Rates (States with population < 10m)**
 (image url)
 
-#**Percent Funding vs. Graduation Rates - Normalized (States with population < 10m)**
+# **Percent Funding vs. Graduation Rates - Normalized (States with population < 10m)**
 (image url)
 
-#**Model**
+# **Model**
 
 Since all our dependent variables were a derivative of the total funding, there was a high degree of multicollinearity; however by scaling and creating new variables (percent of funding), we managed to get low correlation between our final model variables:
 
 (image url)
-#**Correlation Matrix (checking for collinearity)**
+# **Correlation Matrix (checking for collinearity)**
 
 The final variables we included in our model are:
   *Local revenue percent
@@ -68,12 +68,12 @@ The final variables we included in our model are:
 Even though we found some clear trends between the percent of local and government funding and graduation rates in the large states, it was tricky to achieve high correlation. There are many more factors that need to be considered, but with our simplified model we can conclude that If schools rely on local funding more than state/federal, then graduation rates would increase. At the same time, by relying heavily on federal revenue, graduation rates tend to go down. That does not mean the federal funding is causing lower graduation rates, and further studies should explore whether the solution may be relying more on local funding, increasing total federal funding, or other factors.
 
 (img url)
-#**MLR Model**
+# **MLR Model**
 
 As can be seen in the plot below, the model’s residuals show a clear relationship. We tried to use log transform but it didn’t minimize the residuals.
 
 (image url)
-#**Distribution of Target Variable and Residuals Plot**
+# **Distribution of Target Variable and Residuals Plot**
 
 **Libraries used:**
 

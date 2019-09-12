@@ -33,29 +33,31 @@ Exploring the cleaned data, it was unsurprising to find huge variance among the 
   * Grouping by population size: > 10m and under 10m
 
 The plots below show the percent of local and government funding per each state:
-![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/local_percent.png)
-# **Percent of Local Revenue per State:**
 
-![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/gov_percent.png)
+# **Percent of Local Revenue per State:**
+![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/local_percent.png)
+
 # **Percent of Gov’t (State and Federal) Revenue per State:**
+![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/gov_percent.png)
 
 The pairplots graphs below show the patterns of revenue percent for states with a population below 10m and above 10m:
 
+# **Percent Funding vs. Graduation Rates (States with population > 10m):**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_above_10.png)
-# **Percent Funding vs. Graduation Rates (States with population > 10m)**
 
+# **Percent Funding vs. Graduation Rates (States with population < 10m):**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_below_10.png)
-# **Percent Funding vs. Graduation Rates (States with population < 10m)**
 
+# **Percent Funding vs. Graduation Rates - Normalized (States with population < 10m):**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_above_10_scaled.png)
-# **Percent Funding vs. Graduation Rates - Normalized (States with population < 10m)**
 
 # **Model**
 
 Since all our dependent variables were a derivative of the total funding, there was a high degree of multicollinearity; however by scaling and creating new variables (percent of funding), we managed to get low correlation between our final model variables:
 
+# **Correlation Matrix (checking for collinearity):**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/Corrmtx.png)
-# **Correlation Matrix (checking for collinearity)**
+
 
 The final variables we included in our model are:
   * Local revenue percent
@@ -64,13 +66,14 @@ The final variables we included in our model are:
   
 Even though we found some clear trends between the percent of local and government funding and graduation rates in the large states, it was tricky to achieve high correlation. There are many more factors that need to be considered, but with our simplified model we can conclude that If schools rely on local funding more than state/federal, then graduation rates would increase. At the same time, by relying heavily on federal revenue, graduation rates tend to go down. That does not mean the federal funding is causing lower graduation rates, and further studies should explore whether the solution may be relying more on local funding, increasing total federal funding, or other factors.
 
+# **MLR Model:**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/ols.png)
-# **MLR Model**
+
 
 As can be seen in the plot below, the model’s residuals show a clear relationship. We tried to use log transform but it didn’t minimize the residuals.
 
+# **Distribution of Target Variable and Residuals Plot:**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/resid.png)
-# **Distribution of Target Variable and Residuals Plot**
 
 **Libraries used:**
 

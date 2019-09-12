@@ -42,10 +42,10 @@ The plots below show the percent of local and government funding per each state:
 
 The pairplots graphs below show the patterns of revenue percent for states with a population below 10m and above 10m:
 
-# **Percent Funding vs. Graduation Rates (States with population > 10m):**
+# **Percent Funding vs. Graduation Rates (States with population < 10m):**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_above_10.png)
 
-# **Percent Funding vs. Graduation Rates (States with population < 10m):**
+# **Percent Funding vs. Graduation Rates (States with population > 10m):**
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_below_10.png)
 
 # **Percent Funding vs. Graduation Rates - Normalized (States with population < 10m):**

@@ -33,7 +33,7 @@ Exploring the cleaned data, it was unsurprising to find huge variance among the 
   * Grouping by population size: > 10m and under 10m
 
 The plots below show the percent of local and government funding per each state:
-!percent of local revenue per state](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/local_percent.png)
+![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/local_percent.png)
 # **Percent of Local Revenue per State:**
 
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/gov_percent.png)
@@ -42,7 +42,7 @@ The plots below show the percent of local and government funding per each state:
 The pairplots graphs below show the patterns of revenue percent for states with a population below 10m and above 10m:
 
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_above_10.png)
-# **Percent Funding vs. Graduation Rates (States with population < 10m)**
+# **Percent Funding vs. Graduation Rates (States with population > 10m)**
 
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_below_10.png)
 # **Percent Funding vs. Graduation Rates (States with population < 10m)**
@@ -50,7 +50,6 @@ The pairplots graphs below show the patterns of revenue percent for states with 
 ![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/states_above_10_scaled.png)
 # **Percent Funding vs. Graduation Rates - Normalized (States with population < 10m)**
 
-![](https://github.com/ram-avni/Prj_unit2_edu_funding/blob/master/Visuals/ols.png)
 # **Model**
 
 Since all our dependent variables were a derivative of the total funding, there was a high degree of multicollinearity; however by scaling and creating new variables (percent of funding), we managed to get low correlation between our final model variables:

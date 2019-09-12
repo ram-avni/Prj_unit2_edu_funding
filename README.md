@@ -13,13 +13,13 @@ The purpose of this project was to use a linear regression model in order to pre
 
 # **EDA and Feature Engineering**
 
-We used the following data sets:
-Kaggale - U.S. Education Datasets: Unification Project:
-https://www.kaggle.com/noriuk/us-education-datasets-unification-project/version/5
-City-Data.com - Cost of living by U.S. state (2015):
-http://www.city-data.com/forum/city-vs-city/2582388-cost-living-u-s-state-2015-a.html#ixzz5xMemrtzn
-High School Graduation Rates by State:
-https://www.governing.com/gov-data/high-school-graduation-rates-by-state.html
+*We used the following data sets:
+*Kaggale - U.S. Education Datasets: Unification Project:
+ *https://www.kaggle.com/noriuk/us-education-datasets-unification-project/version/5
+*City-Data.com - Cost of living by U.S. state (2015):
+ *http://www.city-data.com/forum/city-vs-city/2582388-cost-living-u-s-state-2015-a.html#ixzz5xMemrtzn
+*High School Graduation Rates by State:
+ *https://www.governing.com/gov-data/high-school-graduation-rates-by-state.html
 
 
 We combined the raw data sets to cover 5o states for a period of 5 years, 2010-2015. As mentioned above, math and English scores were missing from many states, so we eliminated those columns and added the graduation rates instead. 
